@@ -1,0 +1,28 @@
+- title: General
+  links:
+    - name: Products
+      link: /
+    - name: Our Story
+      link: /about/
+    - name: Contact
+      link: /contact/
+- title: Help
+  links:
+    - name: Shipping
+      link: /shipping/
+    - name: Returns
+      link: /returns/
+- title: Social
+  links:
+    - name: Fur
+      link: 'https://www.facebook.com/'
+      new_window: true
+      social_icon: Facebook
+    - name: Fur
+      link: 'https://www.instagram.com/'
+      new_window: true
+      social_icon: Instagram
+    - name: "@Fur"
+      link: 'https://www.twitter.com'
+      new_window: true
+      social_icon: Twitter

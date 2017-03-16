@@ -1,0 +1,59 @@
+
+.staff-image {
+	margin: 25px auto 0 auto;
+	background: no-repeat center center;
+	background-size: cover;
+	border-radius: 300px;
+	width: 70%;
+	padding-bottom: 70%;
+}
+
+.staff {
+	padding: 0;
+	list-style: none;
+	@extend %flexbox;
+	@include flex-flow(wrap);
+	text-align: center;
+
+	li {
+		padding: 30px 20px;
+		box-sizing: border-box;
+		width: 100%;
+
+		@media #{$tablet} {
+			@include flex(1, 1, 45%);
+		}
+
+		@media #{$desktop} {
+			@include flex(1, 1, 29%);
+		}
+
+	}
+
+	.square-image {
+		width: 400px;
+		height: 400px;
+
+		img {
+			border-radius: 400px;
+		}
+	}
+
+	.name {
+		font-size: 2rem;
+		margin-top: 20px;
+	}
+
+	.position {
+		font-size: 1.3rem;
+		color: #666;
+	}
+}
+
+
+.story-points {
+	h3 {
+		font-size: 1.6rem;
+		margin: 0;
+	}
+}

@@ -1,0 +1,109 @@
+.styles {
+	width: 100%;
+	background: #eee;
+	position: relative;
+	padding: 20px;
+	box-sizing: border-box;
+
+	.style-picker {
+		z-index: 2;
+		display: block;
+		line-height: 0;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+
+		> div {
+			width: 25px;
+			height: 25px;
+			border: 1px solid #000;
+			display: inline-block;
+			margin: 0 5px 0 0;
+			border-radius: 2px;
+			cursor: pointer;
+		}
+	}
+
+	> div + div {
+		display: none;
+	}
+
+	i {
+		font-size: 14rem;
+		color: #fff;
+	}
+}
+
+.product-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -40px;
+
+	.styles {
+		width: auto;
+		flex: 1 1 300px;
+		margin-left: 40px;
+	}
+
+	.product-details {
+		flex: 2 1 500px;
+		text-align: left;
+		margin-left: 40px;
+	}
+
+	form {
+		border: 1px solid #444;
+		padding: 20px;
+		border-radius: 2px;
+
+		label:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.product-list {
+	display: flex;
+	flex-flow: wrap;
+	margin: 0 -20px;
+
+	&, > li {
+		list-style: none;
+		padding: 0;
+	}
+
+	> li {
+		flex: 1 1 300px;
+		margin: 20px;
+	}
+
+	h4 {
+		margin: 10px 0 0 0;
+		padding-right: 100px;
+	}
+
+	p {
+		line-height: 1;
+		margin: 10px 0 0 0;
+	}
+
+	.snipcart-add-item {
+		-webkit-appearance: none;
+		color: #222;
+		text-decoration: none;
+		border: 0;
+		background: none;
+		font-weight: bold;
+		font-size: 1.2em;
+		padding: 10px 15px 15px;
+		float: right;
+		cursor: pointer;
+		line-height: 1;
+		margin-top: 10px;
+
+		&:hover {
+			background: #f5f5f5;
+			color: #000;
+		}
+	}
+}

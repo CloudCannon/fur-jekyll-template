@@ -1,0 +1,150 @@
+@media #{$below-mid-point} {
+	.nav-open {
+
+		nav {
+			background: $brand-color;
+			border: 0;
+			z-index: 2;
+
+			a {
+				display: block;
+			}
+		}
+	}
+}
+
+$box-shadow-color: rgba(0,0,0,0.4);
+header {
+	color: #fff;
+	padding: 20px 0;
+	background: $brand-color;
+	box-shadow: 0 3px 10px $box-shadow-color;
+	position: relative;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		z-index: 1;
+		position: relative;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.company-name {
+		display: inline-block;
+		position: relative;
+		top: 4px;
+		a {
+			display: block;
+		}
+
+		svg {
+			display: inline-block;
+			height: 25px;
+			width: 25px;
+		}
+
+		span {
+			font-size: 1.5em;
+			position: relative;
+			top: -2px;
+			left: 5px;
+		}
+	}
+}
+
+nav {
+	text-transform: uppercase;
+	width: 100%;
+	padding: 20px 0 0 0;
+
+	@media #{$mid-point} {
+		display: inline-block;
+		vertical-align: top;
+		width: auto;
+		padding: 0 0 0 40px;
+	}
+
+	a {
+		margin: 0 3px;
+		padding: 20px 10px;
+		border-bottom: 1px solid rgba(255,255,255,0);
+		color: rgba(255,255,255,.6);
+		transition: 200ms ease-in color;
+		display: none;
+
+		@media #{$mid-point} {
+			display: inline-block;
+			padding: 10px;
+		}
+
+
+		&.nav-toggle {
+			display: inline;
+			position: absolute;
+			right: 0;
+			top: -22px;
+			font-size: 1.9em;
+			border: 0;
+			z-index: 2;
+			padding: 20px;
+
+			@media #{$mid-point} {
+				display: none;
+			}
+
+			&:hover {
+				border: 0;
+			}
+		}
+	}
+
+	a:hover {
+		color: #fff;
+	}
+
+
+	a.cart {
+		line-height: 1;
+
+		i {
+			font-size: 22px;
+			line-height: 1;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	@media #{$mid-point} {
+		a.cart {
+			border-radius: 3px;
+			color: #222;
+			background: rgba(255,255,255,.9);
+			position: absolute;
+			right: 20px;
+			top: -2px;
+			font-size: .8em;
+			transition: background .3s ease;
+
+
+			&:hover {
+				background: rgba(255,255,255,1);
+			}
+		}
+	}
+
+	a.active {
+		color: #fff;
+	}
+
+}
