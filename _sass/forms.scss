@@ -46,6 +46,7 @@ label, input, textarea, select {
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
+	border-radius: 3px;
 }
 
 .radio-input {
@@ -88,6 +89,6 @@ input, textarea {
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
-	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-	border: 1px solid rgba(81, 203, 238, 1);
+	box-shadow: 0 0 5px $brand-color;
+	border: 1px solid $brand-color;
 }

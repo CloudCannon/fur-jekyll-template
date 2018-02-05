@@ -4,6 +4,7 @@
 	position: relative;
 	padding: 20px;
 	box-sizing: border-box;
+	border-radius: 3px;
 
 	.style-picker {
 		z-index: 2;
@@ -11,15 +12,15 @@
 		line-height: 0;
 		position: absolute;
 		bottom: 20px;
-		left: 20px;
+		right: 20px;
 
 		> div {
-			width: 25px;
-			height: 25px;
+			width: 20px;
+			height: 20px;
 			border: 1px solid #000;
 			display: inline-block;
 			margin: 0 5px 0 0;
-			border-radius: 2px;
+			border-radius: 20px;
 			cursor: pointer;
 		}
 	}
@@ -49,6 +50,10 @@
 		flex: 2 1 500px;
 		text-align: left;
 		margin-left: 40px;
+
+		h4 {
+			color: $brand-color;
+		}
 	}
 
 	form {
@@ -74,7 +79,10 @@
 
 	> li {
 		flex: 1 1 300px;
-		margin: 20px;
+
+		&:not(:empty) {
+			margin: 20px;
+		}
 	}
 
 	h4 {
@@ -85,6 +93,10 @@
 	p {
 		line-height: 1;
 		margin: 10px 0 0 0;
+	}
+
+	.product-description p {
+		font-size: 1.1rem;
 	}
 
 	.snipcart-add-item {

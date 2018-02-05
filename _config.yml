@@ -15,6 +15,7 @@ author:
   name: fur
   email: fur@example.com
   twitter: fur # twitter username without the @ symbol
+  phone: "+1 23456789"
 social:
   name: Fur Template
   links:

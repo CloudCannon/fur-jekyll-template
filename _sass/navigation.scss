@@ -2,7 +2,6 @@
 	.nav-open {
 
 		nav {
-			background: $brand-color;
 			border: 0;
 			z-index: 2;
 
@@ -13,13 +12,42 @@
 	}
 }
 
-$box-shadow-color: rgba(0,0,0,0.4);
 header {
 	color: #fff;
-	padding: 20px 0;
-	background: $brand-color;
-	box-shadow: 0 3px 10px $box-shadow-color;
+	padding: 20px 0 59px 0;
+	background: linear-gradient(135deg, $brand-color 0%, $brand-color-2 100%);
 	position: relative;
+
+	p {
+		margin: 0;
+	}
+	@media #{$mid-point} {
+		&:before, &:after {
+			content: "";
+			width: 25%;
+			display: block;
+			position: absolute;
+			border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+			transform: translate(-50%, 0);
+
+		}
+
+		&:before {
+			transform: skewX(-15deg);
+			box-shadow: 99px 29px 170px -24px rgba(0,0,0,.05);
+			top: -254px;
+			bottom: 50%;
+			left: 43%
+		}
+
+		&:after {
+			box-shadow: inset 92px -41px 104px -28px rgba(0,0,0,.05);
+			transform: skewX(-12deg);
+			top: 47%;
+			left: 40%;
+			bottom: -121px;
+		}
+	}
 
 	a {
 		color: #fff;
@@ -31,32 +59,9 @@ header {
 			text-decoration: none;
 		}
 	}
-
-	.company-name {
-		display: inline-block;
-		position: relative;
-		top: 4px;
-		a {
-			display: block;
-		}
-
-		svg {
-			display: inline-block;
-			height: 25px;
-			width: 25px;
-		}
-
-		span {
-			font-size: 1.5em;
-			position: relative;
-			top: -2px;
-			left: 5px;
-		}
-	}
 }
 
 nav {
-	text-transform: uppercase;
 	width: 100%;
 	padding: 20px 0 0 0;
 
@@ -114,7 +119,7 @@ nav {
 			line-height: 1;
 			display: inline-block;
 			vertical-align: middle;
-			margin-right: 5px;
+			padding: 0 6px;
 		}
 
 		span {
@@ -122,23 +127,24 @@ nav {
 			vertical-align: middle;
 			position: relative;
 			top: 2px;
+
 		}
 	}
 
 	@media #{$mid-point} {
 		a.cart {
-			border-radius: 3px;
-			color: #222;
-			background: rgba(255,255,255,.9);
+			border-radius: 43px;
+			color: #fff;
+			border: 1px solid rgba(255,255,255, .4);
 			position: absolute;
 			right: 20px;
 			top: -2px;
 			font-size: .8em;
-			transition: background .3s ease;
+			transition: border .3s ease;
 
 
 			&:hover {
-				background: rgba(255,255,255,1);
+				border-color: #fff;
 			}
 		}
 	}

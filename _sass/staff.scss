@@ -14,20 +14,17 @@
 	@extend %flexbox;
 	@include flex-flow(wrap);
 	text-align: center;
+	margin: -175px 0 0 0;
+	justify-content: center;
 
 	li {
 		padding: 30px 20px;
 		box-sizing: border-box;
-		width: 100%;
-
-		@media #{$tablet} {
-			@include flex(1, 1, 45%);
-		}
-
-		@media #{$desktop} {
-			@include flex(1, 1, 29%);
-		}
-
+		flex: 0 1 300px;
+		background: #fff;
+		margin: 0 60px;
+		border-radius: 3px;
+		box-shadow: 0 10px 100px 0 rgba(0,0,0,0.1);
 	}
 
 	.square-image {
@@ -40,7 +37,7 @@
 	}
 
 	.name {
-		font-size: 2rem;
+		font-size: 1.2rem;
 		margin-top: 20px;
 	}
 
@@ -53,7 +50,8 @@
 
 .story-points {
 	h3 {
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 		margin: 0;
+		color: $brand-color;
 	}
 }

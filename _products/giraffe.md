@@ -8,7 +8,7 @@ description_markdown: >-
 
   Slim Fit, 5oz 100% Cotton T-Shirt.
 garment_type:
-price: '9'
+price: '9.00'
 sku: giraffe
 stock: 10
 sizes:

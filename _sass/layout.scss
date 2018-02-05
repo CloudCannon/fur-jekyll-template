@@ -20,19 +20,17 @@
 .hero {
 	color: #ffffff;
 	text-align: center;
-	background: $brand-color no-repeat center;
-	background-size: cover;
 	position: relative;
-
+	z-index: 99;
 	h2 {
-		text-shadow: 0 1px 3px #000;
 		font-size: 3.2rem;
 		line-height: 1.5;
+		font-weight: bold;
 	}
 
 	@media (min-width: 500px) {
 		h2 {
-			font-size: 4rem;
+			font-size: 3.5rem;
 		}
 	}
 
@@ -45,6 +43,28 @@
 	background: #fff;
 	padding: 1px 0 0 0;
 	position: relative;
+}
+
+.company-name {
+	display: inline-block;
+	position: relative;
+	top: 4px;
+	a {
+		display: block;
+	}
+
+	svg {
+		display: inline-block;
+		height: 25px;
+		width: 25px;
+	}
+
+	span {
+		font-size: 16px;
+		position: relative;
+		top: -6px;
+		left: 3px;
+	}
 }
 
 .screenshot{
@@ -127,11 +147,11 @@ blockquote .quote:after {
 
 .thirds {
 	display: flex;
-	margin: 0 -20px;
+	margin: 0 -20px 0 -40px;
 	flex-wrap: wrap;
 }
 
 .thirds div {
- 	flex: 1 1 200px;
-	padding: 50px 20px 0 20px;
+	flex: 1 1 200px;
+	padding: 100px 40px 0 40px;
 }

@@ -33,38 +33,65 @@
 				<div class="company-name"><a href="{{ site.baseurl }}/">{% include logo.html %} <span>{{ site.title }}</span></a></div>
 				{% include navigation.html %}
 			</div>
+
+			<section class="hero">
+				<div class="text-container">
+					{% if page.hero %}
+						<h2>{{ page.hero }}</h2>
+					{% elsif page.name %}
+						<h2>{{ page.name }}</h2>
+					{% endif %}
+
+					{% if page.subtitle %}
+						<p>{{ page.subtitle }}</p>
+					{% endif %}
+				</div>
+			</section>
 		</header>
 
-		<section class="hero">
-			<div class="text-container">
-				{% if page.hero %}
-					<h2>{{ page.hero }}</h2>
-				{% elsif page.name %}
-					<h2>{{ page.name }}</h2>
-				{% endif %}
-			</div>
-		</section>
+
 
 		{{ content }}
 		<footer>
 			<div class="container">
-				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
-				<div class="footer-columns">
-					{% for column in site.data.footer %}
-					<ul class="footer-links">
-						<li><h4>{{ column.title }}</h4></li>
-						{% for link in column.links %}
-							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
-								{{ link.name }}
-								{% if link.social_icon %}
-									{% include social-icon.html icon=link.social_icon %}
-								{% endif %}
-							</a></li>
-						{% endfor %}
-					</ul>
-					{% endfor %}
-				</div>
-				<p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+				<ul class="footer-columns">
+					<li class="about">
+						<div class="company-name">{% include logo.html %} <span>{{ site.title }}</span></div>
+						<p class="editable">Many people have the notion that enlightenment is one state. Many also believe that when it is attained, a person is forever in that state.</p>
+					</li>
+
+					<li class="footer-nav">
+						<h4>General</h4>
+						<ul>
+							<li><a href="/">Products</a></li>
+							<li><a href="/about/">Our Story</a></li>
+							<li><a href="/contact/">Contact</a></li>
+						</ul>
+					</li>
+
+					<li class="footer-nav">
+						<h4>Help</h4>
+						<ul>
+							<li><a href="/shipping/">Shipping</a></li>
+							<li><a href="/returns/">Returns</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<h4>Contact Us</h4>
+						<p>Need help with something? <a href="/contact/">Get in touch</a>.
+						<p class="email"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+						<p><a href="tel:{{ site.author.phone }}">{{ site.author.phone }}</a></p>
+
+						<div class="social-icons">
+							<a class="facebook" href="/">{% include social-icon.html icon="Facebook2" %}</a>
+							<a class="twitter" href="/">{% include social-icon.html icon="Twitter" %}</a>
+							<a class="google-plus" href="/">{% include social-icon.html icon="Google Plus" %}</a>
+							<a class="linkedin" href="/">{% include social-icon.html icon="LinkedIn" %}</a>
+						</div>
+					</li>
+				</ul>
+				<p class="copyright">All Rights Reserved &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Inc. Template by <a href="https://cloudcannon.com">CloudCannon</a></p>
 			</div>
 		</footer>
 		<script>
