@@ -1,23 +1,3 @@
-## Fur
-
-E-commerce template for Jekyll. Browse through a [live demo](https://turquoise-rook.cloudvent.net).
-
-![Fur template screenshot](images/_screenshot.png)
-
-Fur was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-
-Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
-
-## Features
-
-* List product with multiple colours and sizes
-* Take payment online using SnipCart
-* Contact form
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
-
 ## Setup
 
 1. Add your site and author details in `_config.yml`.
