@@ -8,6 +8,8 @@ Fur was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll
 
 Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/fur-jekyll-template)
+
 ## Features
 
 * List product with multiple colours and sizes
