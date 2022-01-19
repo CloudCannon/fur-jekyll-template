@@ -28,7 +28,7 @@ Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https:
 
 ## Develop
 
-Fur was built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
+Fur was built with [Jekyll](http://jekyllrb.com/) version 4.2.1, but should support newer versions as well.
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
