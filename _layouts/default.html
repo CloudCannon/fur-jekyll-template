@@ -11,7 +11,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
-		<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet">
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
@@ -23,8 +22,16 @@
 		{% endif %}
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.css" />
+		<link rel="preconnect" href="https://app.snipcart.com" />
+		<link rel="preconnect" href="https://cdn.snipcart.com" />
 		{% if site.snipcart_key %}
-			<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="{{ site.snipcart_key }}"></script>
+			<script async src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js"></script>
+			<div hidden id="snipcart"
+				data-api-key="{{ site.snipcart_key }}"
+				data-currency="{{ site.snipcart_currency }}"
+				data-config-modal-style="side">
+			</div>
 		{% endif %}
 	</head>
 	<body>
