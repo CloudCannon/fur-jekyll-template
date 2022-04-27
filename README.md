@@ -46,11 +46,6 @@ $ bundle exec jekyll serve
 
 Fur is already optimised for adding, updating and removing products and editing the navigation and footer in CloudCannon.
 
-### Posts
-
-* Add, update or remove a post in the *Posts* collection.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
-
 ### Navigation
 
 * Exposed as a data file to give clients better access.
