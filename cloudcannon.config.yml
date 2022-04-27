@@ -27,9 +27,15 @@ collections_config:
   staff_members:
     _enabled_editors:
       - data
-    _icon: account_circle
+    icon: account_circle
+    schemas:
+      default:
+        path: schemas/staff_members.md
   products:
     _enabled_editors:
       - data
     output: true
-    _icon: shopping_cart
+    icon: shopping_cart
+    schemas:
+      default:
+        path: schemas/products.md
