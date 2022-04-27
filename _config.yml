@@ -7,6 +7,7 @@ baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 snipcart_key: "NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5ODg1ODkw"
+snipcart_currency: "usd"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
@@ -27,12 +28,9 @@ timezone: Etc/UTC
 
 collections:
   staff_members:
-    _hide_content: true
-    _icon: account_circle
+    output: false
   products:
-    _hide_content: true
     output: true
-    _icon: shopping_cart
 
 permalink: pretty
 
@@ -68,13 +66,6 @@ exclude:
   - README.md
   - LICENCE
 
-# -----------
-# CloudCannon
-
-garment_types:
-  - hat
-  - top
-
 social_icons:
   - Email
   - Facebook
@@ -86,14 +77,3 @@ social_icons:
   - Twitter
   - YouTube
   - RSS
-
-_comments:
-  map: Update the map location and display settings.
-  latitude: Coordinates for the center marker on the map.
-  longitude: Coordinates for the center marker on the map.
-  zoom: The zoom level for the map.
-  pricing_table: Update the information in the pricing tables.
-  highlight: Emphasis the text
-  color: The background color used in the plan name and call to action.
-  new_window: Open link in new window
-  description: This is used for facebook shares of the page and google indexing

@@ -28,7 +28,7 @@ Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https:
 
 ## Develop
 
-Fur was built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
+Fur was built with [Jekyll](http://jekyllrb.com/) version 4.2.1, but should support newer versions as well.
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
@@ -45,11 +45,6 @@ $ bundle exec jekyll serve
 ## Editing
 
 Fur is already optimised for adding, updating and removing products and editing the navigation and footer in CloudCannon.
-
-### Posts
-
-* Add, update or remove a post in the *Posts* collection.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
 
 ### Navigation
 
